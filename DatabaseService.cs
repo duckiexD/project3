@@ -16,7 +16,7 @@ public class DatabaseService
         return new SqlConnection(_connectionString);
     }
 
-    // Пример метода для получения всех продуктов
+    
     public List<Product> GetAllProducts()
     {
         var products = new List<Product>();
@@ -57,5 +57,4 @@ public class DatabaseService
         return products;
     }
 
-    // Добавьте аналогичные методы для других сущностей...
 }
