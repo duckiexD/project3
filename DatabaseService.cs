@@ -61,7 +61,7 @@ using Microsoft.EntityFrameworkCore;
             }
         }
 
-        // READ операции (получение данных)
+        
         public async Task<User> GetUserByIdAsync(int id)
         {
             return await _context.Users.FindAsync(id);
@@ -101,7 +101,7 @@ using Microsoft.EntityFrameworkCore;
                 .ToListAsync();
         }
 
-        // UPDATE операции
+       
         public async Task<bool> UpdateUserAsync(User user)
         {
             try
@@ -157,7 +157,7 @@ using Microsoft.EntityFrameworkCore;
             return true;
         }
 
-        // DELETE операции
+       
         public async Task<bool> DeleteUserAsync(int id)
         {
             var user = await _context.Users.FindAsync(id);
@@ -188,7 +188,7 @@ using Microsoft.EntityFrameworkCore;
             return true;
         }
 
-        // Дополнительные методы
+        
         public async Task<bool> UserExistsAsync(int id)
         {
             return await _context.Users.AnyAsync(u => u.Id == id);
