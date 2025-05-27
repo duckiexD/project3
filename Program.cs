@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Configuration;
 
+builder.Services.AddScoped<DatabaseService>();
+
 class Program
 {
     private static DatabaseService _dbService = new DatabaseService();
