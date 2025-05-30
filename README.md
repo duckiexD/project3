@@ -150,5 +150,11 @@
 -Активация/деактивация пользователей
 
 
+![image](https://github.com/user-attachments/assets/8574c75a-17e9-4cea-b176-d65d23c8b118)
+
+
+
+
+
 
 
